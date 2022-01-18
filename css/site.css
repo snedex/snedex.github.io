@@ -1,0 +1,12 @@
+
+section:nth-child(odd){
+    background-color: #eee;
+}
+
+.inner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
