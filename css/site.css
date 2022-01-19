@@ -1,8 +1,3 @@
-
-/* section:nth-child(odd) {
-    background-color: var(--secondary);
-} */
-
 .menu {
     height: 100%;
     width: 0;
@@ -80,13 +75,6 @@ nav.docSlider-pager {
     display: initial;
 }
 
-/* .header {
-    position: fixed;
-    z-index: 200;
-    display: flex;
-    padding: unset;
-} */
-
 button.docSlider-button.selected
 {
     background-color: var(--primary);
@@ -101,8 +89,6 @@ button.docSlider-button
 ion-icon {
     color: var(--contrast);
 }
-
-
 
 nav > ul > li > a {
     margin-left: 0.25rem;
