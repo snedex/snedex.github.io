@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelector('#menuLink').onclick = navOpen;
     document.querySelector('#menuClose').onclick = navClose;
+    document.querySelector('#overlay').onclick = navClose;
     document.querySelector('#themeSwitcher').onclick = togglePageTheme;
 
     if(!localStorage["theme"]) {
