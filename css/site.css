@@ -65,10 +65,12 @@ body > nav {
 
 .inner {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2em;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.3em;
+    padding-bottom: 3em;
 }
 
 nav.docSlider-pager {
@@ -102,3 +104,25 @@ nav > ul > li > a {
     z-index: 200;
 }
 
+article > header {
+    margin-bottom: var(--spacing);
+}
+
+.techsvg {
+    max-width: 50px;
+    min-width: 50px;
+}
+
+/* Thanks cssgrid-generator.com */
+.skillGrid {
+    display: grid;
+    grid-template-columns: 0.75fr 2fr 0.75fr 2fr 0.75fr 2fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 5px;
+    align-items: center;
+} 
+
+.skillGrid > div > p {
+    margin-bottom: 0;
+}
