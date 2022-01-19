@@ -2,48 +2,66 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/pico.min.css">
         <link rel="stylesheet" href="css/docSlider.css">
-        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/site.css">   
         <title>sneddon.dev :: Will Sneddon</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                <li><a href="#resume">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="docSlider">
+        <nav>
+            <ul>
+                <li><a id="menuLink" href="javascript:void(0)" class="contrast">&#9776; Menu</a></li>
+            </ul>
+            <a id="themeSwitcher" href="#" class="contrast outline" role="button" data-theme-switcher="light"><ion-icon name="sunny-outline"></ion-icon> <span>Light</span></a>
+            <div id="overlay"></div> 
+            <div class="menu">
+                <a href="javascript:void(0)" id="menuClose"><ion-icon name="close-outline"></ion-icon></a>
+                <div>
+                <a href="#home" rel="noopen">Home</a>
+                <a href="#skills" rel="noopen">Skills</a>
+                <a href="#resume" rel="noopen">Resume</a>
+                <a href="#examples" rel="noopen">Examples</a>
+                <a href="#photos" rel="noopen">Photos</a>
+                <a href="#space" rel="noopen">Space</a>
+                <a href="#puns" rel="noopen">Puns</a>
+            </div>  
             
-            <section id="home">
-                <div class="inner"><h1>Oh hi.</h1></div>
-            </section>
-            <section id="skills">
-                <div class="inner">Skills</div>
-            </section>
-            <section id="resume">
-                <div class="inner">Resume</div>
-            </section>
-            <section id="photos">
-                <div class="inner">Photos</div>
-            </section>
-            <section id="space">
-                <div class="inner">Space</div>
-            </section>
-            <section id="puns">
-                <div class="inner">Puns</div>
-            </section>
-        </div>     
-        <script src="js/docSlider.min.js"></script>
-        <script>
-            docSlider.init({
-                speed : 500,
-                easing : 'ease-in-out'
-            });
-        </script>
+        </nav>
+        <div class="scrollerContainer">       
+            <div class="docSlider">
+                <section id="home" class="Anchor">
+                    <div class="inner">
+                        <h1>Oh, hi.</h1>
+                        <br />
+                        <p><ion-icon name="heart-outline"></ion-icon></p>
+                    </div>
+                </section>
+                <section id="skills" class="Anchor">
+                    <div class="inner">Skills</div>
+                </section>
+                <section id="resume" class="Anchor">
+                    <div class="inner">Resume</div>
+                </section>
+                <section id="examples">
+                    <div class="inner">Examples</div>
+                </section>
+                <section id="photos">
+                    <div class="inner">Photos</div>
+                </section>
+                <section id="space">
+                    <div class="inner">Space</div>
+                </section>
+                <section id="puns">
+                    <div class="inner">Puns</div>
+                </section>
+            </div>  
+        </div>
+        
+        <script src="js/docSlider.min.js"></script> 
+        <script src="js/site.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
