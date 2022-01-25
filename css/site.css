@@ -126,3 +126,120 @@ article > header {
 .skillGrid > div > p {
     margin-bottom: 0;
 }
+
+#cv-download {
+    position: fixed;
+    right: calc(var(--spacing) * 11.5);
+} 
+
+article {
+    margin-top: var(--block-spacing-vertical);
+    margin-bottom: 0;
+    padding-bottom: calc(var(--block-spacing-vertical) * 0.5);
+}
+
+.example-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  .example-item {
+    width: 100%; 
+    margin: 1%;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    background: var(--code-background-color);
+    box-shadow: var(--card-box-shadow);
+    padding: 20px;
+    
+  }
+
+  .example-image-container {
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+
+  .example-item > p
+  {
+    font-size: small;
+    margin-bottom: 0.5rem;
+  } 
+
+  .example-item > ul,
+  .example-item > ul > li
+  {
+    font-size: small;
+  }
+
+  .example-item > h3
+  { 
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--muted-color);
+    text-align: center;
+  }
+
+  .example-button-grid
+  { 
+    grid-column-gap: var(--grid-spacing-horizontal);
+    grid-row-gap: 0.6em;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+@media screen and (min-width: 576px) {
+    #cv-download {
+        position: fixed;
+        right: calc(var(--spacing) * 5.5);
+    } 
+
+    .example-item 
+    {
+        flex: 0 1 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #cv-download {
+        position: fixed;
+        right: calc(var(--spacing) * 6.5);
+    } 
+
+    .example-item 
+    {
+        flex: 0 1 48%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #cv-download {
+        position: fixed;
+        right: calc(var(--spacing) * 8.5);
+    } 
+
+    .example-item 
+    {
+        flex: 0 1 48%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #cv-download {
+        position: fixed;
+        right: calc(var(--spacing) * 11.5);
+    } 
+
+    .example-item 
+    {
+        flex: 0 1 30%;
+    }
+}

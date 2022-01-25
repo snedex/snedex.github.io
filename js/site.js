@@ -37,8 +37,8 @@ function navClose() {
 function setPageTheme(theme) {
     document.querySelector("html").setAttribute("data-theme", theme);
     
-    document.querySelector('a#themeSwitcher > ion-icon')
-        .setAttribute("name", theme === "dark" ? "sunny" : "moon");
+    document.querySelector('a#themeSwitcher > i')
+        .setAttribute("class", theme === "dark" ? "fas fa-lightbulb" : "fas fa-moon");
 
     localStorage["theme"] = theme;
     theme = theme === "dark" ? "light" : "dark"
