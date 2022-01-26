@@ -13,7 +13,7 @@ function navigateToSlide(element) {
     let slide = element.currentTarget.hash;
     docSlider.jumpPage(slide);
     navClose();
-    element.preventDefault();
+    //element.preventDefault();
 }
 
 function navOpen() {
