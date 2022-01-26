@@ -2,12 +2,18 @@
 
 let isNavOpen = false; 
 
+scrollCue.init({
+    docSlider: true,
+    pageChangeReset: true
+});
+
 docSlider.init({
     speed : 500,
     easing : 'ease-in-out',
     docSlider: true,
     pageChangeReset: true
 });
+
 
 function navigateToSlide(element) {
     let slide = element.currentTarget.hash;
