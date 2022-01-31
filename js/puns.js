@@ -6,6 +6,8 @@ let puns = [
     { content: "What do you call a deer with no eyes?", punchline: "No idea.", attribution: "unknown", link: null },
     { content: "What happened when the two antennas got married? ", punchline: "The ceremony was kinda boring, but the reception was great!", attribution: "unknown", link: null },
     { content: "What's the difference between a poorly dressed man on a tricycle and a well-dressed man on a bicycle?", punchline: "Attire!", attribution: "unknown", link: null },
+    { content: "The sun sets in the west, where does bread rise?", punchline: "In the yeast.", attribution: "unknown", link: null },
+    { content: "Accidentally brought home the wrong ketchup. But you know what they say; ", punchline: "Heinz sight is 20-20.", attribution: "unknown", link: null },
 ];
 
 document.addEventListener("DOMContentLoaded", selectTerribleJoke);
